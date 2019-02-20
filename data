@@ -1,0 +1,27 @@
+
+items: Array(6)
+0:
+etag: ""XpPGQXPnxQJhLgs6enD_n8JR4Qk/ztOOYF86UKMRC7cfLLRpFdAcfG4""
+id:
+kind: "youtube#video"
+videoId: "fpl8v3jiuNU"
+__proto__: Object
+kind: "youtube#searchResult"
+snippet:
+channelId: "UCAJnnJPeWf45gPDuQ15-Z6w"
+channelTitle: "Zach Sang Show"
+description: "ArianaGrande stopped by the studio to talk about her new album "thank u, next" For More Interviews, Subscribe ▻▻ http://bit.ly/29PqCNm -- Listen to the ..."
+liveBroadcastContent: "none"
+publishedAt: "2019-02-09T08:11:46.000Z"
+thumbnails:
+default: {url: "https://i.ytimg.com/vi/fpl8v3jiuNU/default.jpg", width: 120, height: 90}
+high:
+height: 360
+url: "https://i.ytimg.com/vi/fpl8v3jiuNU/hqdefault.jpg"
+width: 480
+__proto__: Object
+medium: {url: "https://i.ytimg.com/vi/fpl8v3jiuNU/mqdefault.jpg", width: 320, height: 180}
+__proto__: Object
+title: "Ariana Grande "thank u, next" Interview"
+__proto__: Object
+__proto__: Object

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang= "en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>API CAPSTONE</title>
+        <meta name="Musician News" content="Search your favorite artist and see what they've been up to!">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <header>
+            <div class="banner">
+                <h1>Big Music Guy</h1>
+            </div>
+        </header>
+        <main>
+            <section class="main-page">  
+                    <input type="button" value="Get Started!" class="start-button">
+                
+                    <h3>Welcome to Big Music Guy, the web app that tailors to the music fans who want more than just the music, but to understand what is underneath! Search a band here, and you'll get a list of video interviews, recent news articles, and then recommendations for similar bands you may love. Do it, search away!</h3>
+            </section>  
+            <section class="search-page hidden">
+                <form>
+                    <label for="search-bar">Search a band, solo artist, or any musician you're a fan of!</label>
+                    <input type="text" name="search-bar" placeholder="ex:The 1975" class="search-bar">
+                    <button value="input">Search</button>
+                </form>       
+                <p id="js-error-message" class="error-message"></p>
+            </section>
+
+            <section="results-page">
+                <div class="results hidden"></div>
+            </section>
+        </main>
+        <script src="index.js"></script>
+    </body>
+</html>

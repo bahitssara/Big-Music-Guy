@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.start-button {
+    display: block;
+    margin:auto;
+}
+
+.hidden{
+    display:none;
+}
+
