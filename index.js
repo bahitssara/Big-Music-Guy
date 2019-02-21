@@ -19,10 +19,7 @@ $(document).ready(function(){
         const searchInput = $('.search-bar').val();
         getYoutubeResults(searchInput);
         getNewsResults(searchInput);
-<<<<<<< HEAD
         getTasteDiveResults(searchInput);
-=======
->>>>>>> master
      })
  }
 
@@ -55,32 +52,42 @@ $(document).ready(function(){
             throw new Error(response.statusText);
         })
         .then(responseJson => {
-            console.log(responseJson)
+            renderYoutubeResults(responseJson);
         }) 
         .catch(err => {
             $('#js-error-message').text(`Something went wrong: ${err.message}`);
     })
  }
 
+ //display youtube results
+ function renderYoutubeResults(responseJson) {
+    console.log(responseJson)
+    $('.youtube-results').empty();
+
+    responseJson.items.forEach(video => {
+        $('.youtube-results').append(`
+        <ul>
+            <li><h3>${video.snippet.title}</h3>
+                <img src='${video.snippet.thumbnails.medium.url}'>
+            </li>
+        </ul>    
+        `)
+})
+
+    $('.results').removeClass('hidden');
+}
+
  // fetch news articles
  function getNewsResults(query){
     const params = {
         q: query,
-<<<<<<< HEAD
         sortBy: 'relevancy',
         totalResults: 6,
-=======
-        maxResults: 6,
->>>>>>> master
         language: 'en'
     };
     const apiKey = '3311ba7deadd4135ac85e662cfb2f5fe';
     const newsUrl = 'https://newsapi.org/v2/everything';
-<<<<<<< HEAD
     const queryString = setQueryParams(params);
-=======
-    const queryString = setQueryParams(params)
->>>>>>> master
     const url = newsUrl + '?' + queryString;
 
     const options = {
@@ -96,39 +103,66 @@ $(document).ready(function(){
            throw new Error(response.statusText);
        })
        .then(responseJson => {
-           console.log(responseJson)
+           renderNewsResults(responseJson)
        }) 
        .catch(err => {
            $('#js-error-message').text(`Something went wrong: ${err.message}`);
    })
 }
 
-<<<<<<< HEAD
-//fetch tastdive results
+//display news results
+function renderNewsResults(responseJson){
+    console.log(responseJson);
+    $('.news-results').empty();
+
+    responseJson.articles.forEach(news => {
+        $('.news-results').append(`
+        <ul>
+            <li><h3>${news.title}</h3></li>
+            <img src="${news.urlToImage}" class="news-image" alt="news image">
+            <li><a href="${news.url}">Read Full Article</a></li>
+        </ul>    
+        `)
+    })
+
+    $('.results').removeClass('hidden');
+}
+
+//fetch tastedive results
 function getTasteDiveResults(query,callback) {
     const tasteDiveUrl='https://tastedive.com/api/similar?callback=?';
     const params = {
         k: '330958-BigMusic-3TPFTSYM',
         q: query,
         limit: 6,
-        type: 'music'
+        type: 'music',
+        info: 1
     };
     const queryString = setQueryParams(params);
     const url = tasteDiveUrl + '&' + queryString;
 
     $.getJSON(url,callback, function(json){
-        console.log(json);
-    })
-    
+        renderTasteDiveResults(json);
+    }) 
 }
-=======
 
+//display tastedive results
+function renderTasteDiveResults(json) {
+    console.log(json);
+    $('.tastedive-results').empty();
+    json.Similar.Results.forEach(rec => {
+        $('.tastedive-results').append(`
+        <ul>
+            <li><h3>${rec.Name}</h3></li>
+            <li><a href="${rec.yUrl}">Video</a></li>
+            <li><a href="${rec.wUrl}">Wiki</a></li>
+        </ul>    
+        `)
+    })
 
+    $('.results').removeClass('hidden');
+}
 
-
-
-
->>>>>>> master
  $(watchForm);
 
 

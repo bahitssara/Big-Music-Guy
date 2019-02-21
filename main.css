@@ -12,3 +12,12 @@
     display:none;
 }
 
+ul {
+    list-style-type: none;
+}
+
+.news-image {
+    width: 300px;
+    height: auto;
+}
+
