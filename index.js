@@ -19,6 +19,7 @@ $(document).ready(function(){
         const searchInput = $('.search-bar').val();
         getYoutubeResults(searchInput);
         getNewsResults(searchInput);
+        getTasteDiveResults(searchInput);
      })
  }
 
@@ -62,12 +63,13 @@ $(document).ready(function(){
  function getNewsResults(query){
     const params = {
         q: query,
-        maxResults: 6,
+        sortBy: 'relevancy',
+        totalResults: 6,
         language: 'en'
     };
     const apiKey = '3311ba7deadd4135ac85e662cfb2f5fe';
     const newsUrl = 'https://newsapi.org/v2/everything';
-    const queryString = setQueryParams(params)
+    const queryString = setQueryParams(params);
     const url = newsUrl + '?' + queryString;
 
     const options = {
@@ -90,6 +92,23 @@ $(document).ready(function(){
    })
 }
 
+//fetch tastdive results
+function getTasteDiveResults(query,callback) {
+    const tasteDiveUrl='https://tastedive.com/api/similar?callback=?';
+    const params = {
+        k: '330958-BigMusic-3TPFTSYM',
+        q: query,
+        limit: 6,
+        type: 'music'
+    };
+    const queryString = setQueryParams(params);
+    const url = tasteDiveUrl + '&' + queryString;
+
+    $.getJSON(url,callback, function(json){
+        console.log(json);
+    })
+    
+}
  $(watchForm);
 
 
