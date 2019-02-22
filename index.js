@@ -84,7 +84,7 @@ $(document).ready(function(){
     const params = {
         q: query,
         sortBy: 'relevancy',
-        totalResults: 6,
+        pageSize: 6,
         language: 'en'
     };
     const apiKey = '3311ba7deadd4135ac85e662cfb2f5fe';
