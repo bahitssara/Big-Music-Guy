@@ -165,6 +165,12 @@ function renderTasteDiveResults(json) {
     $('.results').removeClass('hidden');
 }
 
+$('.search-again').click(function() {
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+    return false;
+});
+
+
  $(watchForm);
 
 

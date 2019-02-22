@@ -55,6 +55,7 @@ label {
 }
 
 .search-page input {
+    color:black;
     margin-top: 10px;
     width: 375px;
     height:50px;
