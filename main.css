@@ -15,8 +15,8 @@ html {
 
 .main-page {
     background-color:rgba(72, 52, 46, 0.7);
-    margin-left:150px;
-    margin-right:150px;
+    margin-left:3em;
+    margin-right:3em;
     border-radius: 5px;
     padding:20px;
     margin-top: 20px;
@@ -77,20 +77,20 @@ ul {
 
 .youtube-results{
     background-color:rgba(72, 52, 46, 0.7);
+    padding: 20px 20px;
     border-radius: 4px;
-    margin-left: 250px;
-    margin-right: 250px;
-    display: inline-block;
+    margin-left:3em;
+    margin-right:3em;
 }
 
 .news-results {
     background-color:rgba(187, 85, 2, 0.58);
+    padding: 20px 20px;
     border-radius:4px;
-    margin-left: 250px;
-    margin-right: 250px;
-    display:inline-block;
-    
+    margin-left: 3em;
+    margin-right: 3em;
 }
+
 
 .news-image {
     width: 300px;
@@ -100,8 +100,7 @@ ul {
 .tastedive-results {
     display:flex;
     justify-content: center;
-    flex-wrap: wrap;
-}
+    flex-wrap: wrap;}
 
 .tastedive-list li {
     background-color: rgba(199, 89, 72, 0.71);

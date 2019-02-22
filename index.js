@@ -68,8 +68,8 @@ $(document).ready(function(){
         $('.youtube-results').append(`
         <ul>
             <li><h3>${video.snippet.title}</h3>
-                <div class="iFrame hide">
-                    <iframe class="iFrame-box" width="350px" height="200px" src="http://www.youtube.com/embed/${video.id.videoId}" frameborder="0" allowfullscreen></iframe><br>
+                <div class="iFrame">
+                    <iframe class="iFrame-box" width="350px" height="200px" src="https://www.youtube.com/embed/${video.id.videoId}" frameborder="0" allowfullscreen></iframe><br>
            </div>
             </li>
         </ul>    
@@ -156,8 +156,8 @@ function renderTasteDiveResults(json) {
         $('.tastedive-results').append(`
         <ul class="tastedive-list">
             <li><h3>${rec.Name}</h3></li>
-            <a href="${rec.yUrl}">Video</a></li>
-            <a href="${rec.wUrl}">Wiki</a></li>
+            <a href="${rec.yUrl}" target="_blank">Video</a></li>
+            <a href="${rec.wUrl}" target="_blank">Wiki</a></li>
         </ul>    
         `)
     })
