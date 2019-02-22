@@ -1,19 +1,86 @@
 * {
     box-sizing: border-box;
     text-align: center;
+    font-family: sans-serif;
+    color: white;
+}
+
+html {
+    background: url(images/BMG-Background.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.main-page {
+    background-color:rgba(72, 52, 46, 0.7);
+    margin-left:150px;
+    margin-right:150px;
+    border-radius: 5px;
+    padding:20px;
+    margin-top: 20px;
+}
+h1 {
+    font-size: 50px;
+    color:white;
+    text-shadow: -2px 3px 3px rgba(150, 150, 150, 1);
+}
+
+.main-page h3 {
+    font-size: 35px;
+    color:white;
 }
 
 .start-button {
-    display: block;
-    margin:auto;
+    background-color:white;
+    border-radius: 4px;
+    color: #46332d;
+    padding: 20px;
+    font-size: 2rem;
 }
 
 .hidden{
     display:none;
 }
 
+form {
+    padding-top: 150px;
+}
+
+label {
+    color:white;
+    font-size:28px;
+    display:block;
+}
+
+button {
+    background-color:white;
+    border-radius: 4px;
+    color: #46332d;
+    padding: 20px;
+    font-size: .5rem;
+}
+
 ul {
     list-style-type: none;
+}
+
+.youtube-results{
+    background-color:rgba(72, 52, 46, 0.7);
+    border-radius: 4px;
+    margin-left: 250px;
+    margin-right: 250px;
+    display: inline-block;
+}
+
+.news-results {
+    background-color:rgba(187, 85, 2, 0.58);
+    border-radius:4px;
+    margin-left: 250px;
+    margin-right: 250px;
+    display:inline-block;
+    
 }
 
 .news-image {
@@ -21,3 +88,14 @@ ul {
     height: auto;
 }
 
+.tastedive-results {
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tastedive-list li {
+    background-color: rgba(199, 89, 72, 0.71);
+    padding: 30px;
+    border-radius:4px;
+}

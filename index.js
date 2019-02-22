@@ -152,10 +152,10 @@ function renderTasteDiveResults(json) {
     $('.tastedive-results').empty();
     json.Similar.Results.forEach(rec => {
         $('.tastedive-results').append(`
-        <ul>
+        <ul class="tastedive-list">
             <li><h3>${rec.Name}</h3></li>
-            <li><a href="${rec.yUrl}">Video</a></li>
-            <li><a href="${rec.wUrl}">Wiki</a></li>
+            <a href="${rec.yUrl}">Video</a></li>
+            <a href="${rec.wUrl}">Wiki</a></li>
         </ul>    
         `)
     })
