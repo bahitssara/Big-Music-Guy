@@ -68,7 +68,9 @@ $(document).ready(function(){
         $('.youtube-results').append(`
         <ul>
             <li><h3>${video.snippet.title}</h3>
-                <img src='${video.snippet.thumbnails.medium.url}'>
+                <div class="iFrame hide">
+                    <iframe class="iFrame-box" width="350px" height="200px" src="http://www.youtube.com/embed/${video.id.videoId}" frameborder="0" allowfullscreen></iframe><br>
+           </div>
             </li>
         </ul>    
         `)
@@ -120,7 +122,7 @@ function renderNewsResults(responseJson){
         <ul>
             <li><h3>${news.title}</h3></li>
             <img src="${news.urlToImage}" class="news-image" alt="news image">
-            <li><a href="${news.url}">Read Full Article</a></li>
+            <li><a href="${news.url}" target="_blank">Read Full Article</a></li>
         </ul>    
         `)
     })

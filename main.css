@@ -54,12 +54,21 @@ label {
     display:block;
 }
 
+.search-page input {
+    margin-top: 10px;
+    width: 375px;
+    height:50px;
+    border-radius:10px;
+}
 button {
     background-color:white;
+    display:block;
+    margin: auto;
+    margin-top: 10px;
     border-radius: 4px;
     color: #46332d;
-    padding: 20px;
-    font-size: .5rem;
+    height:50px;
+    font-size: 18px;
 }
 
 ul {
