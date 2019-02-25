@@ -15,29 +15,21 @@ html {
 
 .main-page {
     background-color:rgba(72, 52, 46, 0.7);
-    margin-left:3em;
-    margin-right:3em;
-    border-radius: 5px;
-    padding:20px;
-    margin-top: 20px;
 }
+
 h1 {
-    font-size: 50px;
     color:white;
     text-shadow: -2px 3px 3px rgba(150, 150, 150, 1);
 }
 
 .main-page h3 {
-    font-size: 35px;
     color:white;
 }
 
 .start-button {
     background-color:white;
-    border-radius: 4px;
     color: #46332d;
     padding: 20px;
-    font-size: 2rem;
 }
 
 .hidden{
@@ -112,3 +104,87 @@ ul {
 .rec-results{
     display: block;
 }
+
+
+@media screen and (min-width: 320px) {
+    .main-page {
+        margin-left:1em;
+        margin-right:1em;
+        border-radius: 5px;
+        padding:20px;
+        margin-top: 65px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+    
+    .main-page h3 {
+        font-size: 25px;
+        }
+        
+    .start-button {
+    border-radius: 4px;
+    padding: 15px;
+    font-size: 2em;
+}
+
+}
+
+@media screen and (min-width: 765px){
+    .main-page {
+        margin-left:3em;
+        margin-right:3em;
+        border-radius: 5px;
+        padding:100px 20px;
+        margin-top: 150px;
+    }
+
+    h1 {
+        font-size: 40px;
+        margin-bottom: 50px;
+    }
+    
+    .main-page h3 {
+        margin-top: 50px;
+        font-size: 35px;
+        }
+        
+    .start-button {
+    border-radius: 4px;
+    padding: 15px;
+    font-size: 2em;
+}
+
+}
+
+
+@media screen and (min-width: 1000px){
+    .main-page {
+        margin-left:3em;
+        margin-right:3em;
+        border-radius: 5px;
+        padding:60px 20px;
+        margin-top: 20px;
+    }
+    
+    h1 {
+        font-size: 50px;
+        color:white;
+    }
+    
+    .main-page h3 {
+        font-size: 35px;
+        color:white;
+    }
+    
+    .start-button {
+        background-color:white;
+        border-radius: 4px;
+        color: #46332d;
+        font-size: 2rem;
+    }
+
+}
+
+
