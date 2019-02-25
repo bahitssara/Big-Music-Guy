@@ -48,20 +48,12 @@ label {
 
 .search-page input {
     color:black;
-    margin-top: 10px;
-    width: 375px;
-    height:50px;
-    border-radius:10px;
 }
 button {
     background-color:white;
     display:block;
     margin: auto;
-    margin-top: 10px;
-    border-radius: 4px;
     color: #46332d;
-    height:50px;
-    font-size: 18px;
 }
 
 ul {
@@ -83,7 +75,6 @@ ul {
     margin-left: 3em;
     margin-right: 3em;
 }
-
 
 .news-image {
     width: 300px;
@@ -120,15 +111,40 @@ ul {
     }
     
     .main-page h3 {
-        font-size: 25px;
+        font-size: 22px;
         }
         
     .start-button {
     border-radius: 4px;
-    padding: 15px;
-    font-size: 2em;
-}
+    padding: 20px;
+    font-size: 1.5em;
+    }
 
+    form {
+        padding-top: 230px;
+    }
+
+    label {
+        color:white;
+        text-shadow: -2px 1px 2px rgba(150, 150, 150, 1);
+        font-size:24px;
+        display:block;
+    }
+
+    .search-page input {
+        font-size:18px;
+        margin-top: 10px;
+        width: 325px;
+        height:50px;        
+        border-radius:10px;
+    }
+
+    button {
+        margin-top: 10px;
+        border-radius: 4px;
+        height:50px;
+        font-size: 20px;
+    }
 }
 
 @media screen and (min-width: 765px){
@@ -154,8 +170,34 @@ ul {
     border-radius: 4px;
     padding: 15px;
     font-size: 2em;
-}
+    }
 
+    form {
+        padding-top: 365px;
+    }
+
+    label {
+        color:white;
+        text-shadow: -2px 3px 3px rgba(150, 150, 150, 1);
+        font-size:45px;
+        display:block;
+    }
+
+    .search-page input {
+        font-size:20px;
+        margin-top: 15px;
+        width: 375px;
+        height:60px;        
+        border-radius:10px;
+    }
+
+    button {
+        margin-top: 10px;
+        border-radius: 4px;
+        height:50px;
+        width: 150px;
+        font-size: 26px;
+    }
 }
 
 
@@ -164,25 +206,46 @@ ul {
         margin-left:3em;
         margin-right:3em;
         border-radius: 5px;
-        padding:60px 20px;
-        margin-top: 20px;
+        padding: 55px 30px;
+        margin-top: 110px;
     }
     
     h1 {
         font-size: 50px;
-        color:white;
     }
     
     .main-page h3 {
-        font-size: 35px;
-        color:white;
+        font-size: 30px;
     }
     
     .start-button {
-        background-color:white;
         border-radius: 4px;
-        color: #46332d;
-        font-size: 2rem;
+        font-size: 2.3rem;
+    }
+
+    form {
+        padding: 75px;
+
+    }
+    
+    label {
+        text-shadow: -2px 3px 3px rgba(150, 150, 150, 1);
+        padding:30px;
+        font-size:40px;
+    }
+    
+    .search-page input {
+        margin-top: 10px;
+        width: 400px;
+        height:75px;
+        border-radius:10px;
+    }
+    button {
+        margin-top: 20px;
+        border-radius: 6px;
+        height:65px;
+        width: 150px;
+        font-size: 24px;
     }
 
 }
