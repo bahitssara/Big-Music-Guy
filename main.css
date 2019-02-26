@@ -42,13 +42,14 @@ form {
 
 label {
     color:white;
-    font-size:28px;
+    font-size:210px;
     display:block;
 }
 
 .search-page input {
     color:black;
 }
+
 button {
     background-color:white;
     display:block;
@@ -64,8 +65,6 @@ ul {
     background-color:rgba(72, 52, 46, 0.7);
     padding: 20px 20px;
     border-radius: 4px;
-    margin-left:3em;
-    margin-right:3em;
 }
 
 .news-results {
@@ -115,13 +114,13 @@ ul {
         }
         
     .start-button {
-    border-radius: 4px;
-    padding: 20px;
-    font-size: 1.5em;
+        border-radius: 4px;
+        padding: 20px;
+        font-size: 1.5em;
     }
 
     form {
-        padding-top: 230px;
+        padding-top: 200px;
     }
 
     label {
@@ -129,10 +128,11 @@ ul {
         text-shadow: -2px 1px 2px rgba(150, 150, 150, 1);
         font-size:24px;
         display:block;
+        padding: 10px;
     }
 
     .search-page input {
-        font-size:18px;
+        font-size:110px;
         margin-top: 10px;
         width: 325px;
         height:50px;        
@@ -144,6 +144,58 @@ ul {
         border-radius: 4px;
         height:50px;
         font-size: 20px;
+    }
+
+    .youtube-results{
+        background-color:rgba(72, 52, 46, 0.7);
+        border-radius: 4px;
+        margin-left:3px;
+        margin-right:3px;
+        overflow: auto;
+        height:500px;
+    }
+
+    .youtube-title {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    iframe {
+        width:250px;
+        height:auto;
+    }
+    
+    .news-results {
+        background-color:rgba(187, 85, 2, 0.58);
+        padding: 20px 20px;
+        border-radius:4px;
+        margin-left: 3px;
+        margin-right: 3px;
+        height:500px;
+        overflow: auto;
+    }
+    
+    .news-image {
+        width: 250px;
+        height: auto;
+        display:block;
+        margin:auto;
+    }
+    
+    .tastedive-results {
+        display:block;
+        margin-left:3px;
+        margin-right:3px;
+        height:300px;
+        overflow-x: auto;
+    }
+    
+    .tastedive-list {
+        background-color: rgba(199, 89, 72, 0.71);
+        padding: 30px;
+        margin-left: 3px;
+        margin-right: 3px;
+        border-radius:4px;
     }
 }
 
@@ -198,16 +250,81 @@ ul {
         width: 150px;
         font-size: 26px;
     }
+
+    .youtube-results{
+        background-color:rgba(72, 52, 46, 0.7);
+        border-radius: 4px;
+        margin-left:10px;
+        margin-right:10px;
+        overflow: auto;
+        height:550px;
+    }
+
+    .youtube-title {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    iframe {
+        width:375px;
+        height:250px;
+    }
+    
+    .news-results {
+        background-color:rgba(187, 85, 2, 0.58);
+        padding: 20px 20px;
+        border-radius:4px;
+        margin-left: 10px;
+        margin-right: 10px;
+        height:500px;
+        overflow: auto;
+    }
+
+    .news-title {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    
+    .news-image {
+        width:375px;
+        height:250px;
+        display:block;
+        margin:auto;
+    }
+    
+    .tastedive-results {
+        display:block;
+        margin-left:10px;
+        margin-right:10px;
+        height:300px;
+        overflow-x: auto;
+    }
+    
+    .tastedive-list {
+        background-color: rgba(199, 89, 72, 0.71);
+        padding: 30px;
+        margin-left: 3px;
+        margin-right: 3px;
+        border-radius:4px;
+    }
+
+    .search-again {
+        margin-top: 20px;
+        border-radius: 6px;
+        height:65px;
+        width: 150px;
+        font-size: 24px;
+    }
 }
 
 
 @media screen and (min-width: 1000px){
     .main-page {
-        margin-left:3em;
-        margin-right:3em;
+        margin-left:50px;
+        margin-right:50px;
         border-radius: 5px;
         padding: 55px 30px;
-        margin-top: 110px;
+        margin-top: 75px;
     }
     
     h1 {
@@ -225,7 +342,6 @@ ul {
 
     form {
         padding: 75px;
-
     }
     
     label {
@@ -241,6 +357,71 @@ ul {
         border-radius:10px;
     }
     button {
+        margin-top: 20px;
+        border-radius: 6px;
+        height:65px;
+        width: 150px;
+        font-size: 24px;
+    }
+
+    .youtube-results{
+        background-color:rgba(72, 52, 46, 0.7);
+        border-radius: 4px;
+        margin-left:80px;
+        margin-right:80px;
+        overflow: auto;
+        height:550px;
+    }
+
+    .youtube-title {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    iframe {
+        width:475px;
+        height:350px;
+    }
+    
+    .news-results {
+        background-color:rgba(187, 85, 2, 0.58);
+        padding: 20px 20px;
+        border-radius:4px;
+        margin-left: 80px;
+        margin-right: 80px;
+        height:500px;
+        overflow: auto;
+    }
+
+    .news-title {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    
+    .news-image {
+        width:475px;
+        height:350px;
+        display:block;
+        margin:auto;
+    }
+    
+    .tastedive-results {
+        display:block;
+        margin-left:80px;
+        margin-right:80px;
+        height:300px;
+        overflow-y: scroll;
+    }
+    
+    .tastedive-list {
+        background-color: rgba(199, 89, 72, 0.71);
+        padding: 30px;
+        margin-left: 3px;
+        margin-right: 3px;
+        border-radius:4px;
+    }
+
+    .search-again {
         margin-top: 20px;
         border-radius: 6px;
         height:65px;

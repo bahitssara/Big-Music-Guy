@@ -65,18 +65,15 @@ $(document).ready(function(){
     $('.youtube-results').empty();
 
     $('.youtube-results').append(`
-        <banner><h2>Video Interviews <i class="fab fa-youtube-square"></i></h2></banner>
+        <h2 class="youtube-banner">Video Interviews <i class="fab fa-youtube-square"></i></h2>
     `)
 
     responseJson.items.forEach(video => {
         $('.youtube-results').append(`
-        <ul>
-            <li><h3>${video.snippet.title}</h3>
+        <h3 class="youtube-title">${video.snippet.title}</h3>
                 <div class="iFrame">
-                    <iframe class="iFrame-box" width="350px" height="200px" src="https://www.youtube.com/embed/${video.id.videoId}" frameborder="0" allowfullscreen></iframe><br>
-           </div>
-            </li>
-        </ul>    
+                    <iframe class="iFrame-box" src="https://www.youtube.com/embed/${video.id.videoId}" frameborder="0" allowfullscreen></iframe><br>
+           </div>    
         `)
 })
 
@@ -127,11 +124,9 @@ function renderNewsResults(responseJson){
 
     responseJson.articles.forEach(news => {
         $('.news-results').append(`
-        <ul>
-            <li><h3>${news.title}</h3></li>
+            <h3 class="news-title">${news.title}</h3>
             <img src="${news.urlToImage}" class="news-image" alt="news image">
-            <li><a href="${news.url}" target="_blank">Read Full Article</a></li>
-        </ul>    
+            <a href="${news.url}" target="_blank">Read Full Article</a>
         `)
     })
 
@@ -167,11 +162,11 @@ function renderTasteDiveResults(json) {
     
     json.Similar.Results.forEach(rec => {
         $('.tastedive-results').append(`
-        <ul class="tastedive-list">
-            <li><h3>${rec.Name}</h3></li>
-            <a href="${rec.yUrl}" target="_blank">Video</a></li>
-            <a href="${rec.wUrl}" target="_blank">Wiki</a></li>
-        </ul>    
+        <div class="tastedive-list">
+            <h3>${rec.Name}</h3>
+            <a href="${rec.yUrl}" target="_blank">Video</a>
+            <a href="${rec.wUrl}" target="_blank">Wiki</a> 
+        </div>
         `)
     })
 
@@ -181,6 +176,12 @@ function renderTasteDiveResults(json) {
 $('.search-again').click(function() {
     $("html, body").animate({ scrollTop: 0 }, "slow");
     return false;
+});
+
+$('#search-button').click(function() {
+$('html, body').animate({
+    scrollTop: ($('.results-page').offset().top)
+},500);
 });
 
 
