@@ -186,5 +186,3 @@ $('html, body').animate({
 
 
  $(watchForm);
-
-

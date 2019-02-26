@@ -42,7 +42,6 @@ form {
 
 label {
     color:white;
-    font-size:210px;
     display:block;
 }
 
@@ -132,7 +131,7 @@ ul {
     }
 
     .search-page input {
-        font-size:110px;
+        font-size:20px;
         margin-top: 10px;
         width: 325px;
         height:50px;        
@@ -430,5 +429,3 @@ ul {
     }
 
 }
-
-
