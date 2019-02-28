@@ -3,6 +3,7 @@
     text-align: center;
     font-family: sans-serif;
     color: white;
+    /* display: inline-block; */
 }
 
 html {
@@ -151,7 +152,7 @@ ul {
         margin-left:3px;
         margin-right:3px;
         overflow: auto;
-        height:500px;
+        /* height:500px; */
     }
 
     .youtube-title {
@@ -170,7 +171,7 @@ ul {
         border-radius:4px;
         margin-left: 3px;
         margin-right: 3px;
-        height:500px;
+        /* height:500px; */
         overflow: auto;
     }
     
@@ -256,7 +257,7 @@ ul {
         margin-left:10px;
         margin-right:10px;
         overflow: auto;
-        height:550px;
+        /* height:550px; */
     }
 
     .youtube-title {
@@ -275,7 +276,7 @@ ul {
         border-radius:4px;
         margin-left: 10px;
         margin-right: 10px;
-        height:500px;
+        /* height:500px; */
         overflow: auto;
     }
 
@@ -350,26 +351,42 @@ ul {
     }
     
     .search-page input {
-        margin-top: 10px;
+        margin-top: 0px;
         width: 400px;
-        height:75px;
+        height: 51px;
         border-radius:10px;
+        display: inline-block;
     }
     button {
         margin-top: 20px;
         border-radius: 6px;
-        height:65px;
+        height: 48px;
         width: 150px;
         font-size: 24px;
+        display: inline-block;
+        background-color: #b44839;
+        color: white;
     }
 
+    #left {
+        display: inline-block;
+        width: 45%
+    }
+
+    #right {
+        display: inline-block;
+        width: 45%
+    }
+    
     .youtube-results{
         background-color:rgba(72, 52, 46, 0.7);
         border-radius: 4px;
-        margin-left:80px;
-        margin-right:80px;
+        /* margin-left:80px; */
+        /* margin-right:80px; */
         overflow: auto;
-        height:550px;
+        height: 500px;
+        /*width: 45%;*/
+        /*display: inline-block;*/
     }
 
     .youtube-title {
@@ -384,12 +401,14 @@ ul {
     
     .news-results {
         background-color:rgba(187, 85, 2, 0.58);
-        padding: 20px 20px;
+        /* padding: 20px 20px; */
         border-radius:4px;
-        margin-left: 80px;
-        margin-right: 80px;
+        /* margin-left: 80px; */
+        /* margin-right: 80px; */
         height:500px;
         overflow: auto;
+        /*width: 45%;
+        display: inline-block;*/
     }
 
     .news-title {
@@ -408,7 +427,7 @@ ul {
         display:block;
         margin-left:80px;
         margin-right:80px;
-        height:300px;
+        /* height:300px; */
         overflow-y: scroll;
     }
     
@@ -421,10 +440,10 @@ ul {
     }
 
     .search-again {
-        margin-top: 20px;
+        /* margin-top: 20px; */
         border-radius: 6px;
         height:65px;
-        width: 150px;
+        /* width: 150px; */
         font-size: 24px;
     }
 

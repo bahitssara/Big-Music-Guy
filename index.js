@@ -64,10 +64,6 @@ $(document).ready(function(){
     console.log(responseJson)
     $('.youtube-results').empty();
 
-    $('.youtube-results').append(`
-        <h2 class="youtube-banner">Video Interviews <i class="fab fa-youtube-square"></i></h2>
-    `)
-
     responseJson.items.forEach(video => {
         $('.youtube-results').append(`
         <h3 class="youtube-title">${video.snippet.title}</h3>
@@ -118,10 +114,6 @@ function renderNewsResults(responseJson){
     console.log(responseJson);
     $('.news-results').empty();
 
-    $('.news-results').append(`
-        <banner role="header"><h2>Recent News<i class="far fa-newspaper"></i></h2></banner>
-    `)
-
     responseJson.articles.forEach(news => {
         $('.news-results').append(`
             <h3 class="news-title">${news.title}</h3>
@@ -156,10 +148,6 @@ function renderTasteDiveResults(json) {
     console.log(json);
     $('.tastedive-results').empty();
 
-    $('.tastedive-results').append(`
-        <h3 class="rec-results">You may also like:</h3>
-    `)
-    
     json.Similar.Results.forEach(rec => {
         $('.tastedive-results').append(`
         <div class="tastedive-list">
