@@ -6,7 +6,7 @@
 }
 
 html {
-    background: url(images/BMG-Background.jpg) no-repeat center center fixed;
+    background: url(images/background.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -19,18 +19,20 @@ html {
     text-shadow: -2px 3px 4px rgba(76, 49, 40, 1);
 }
 
-.main-page {
-    background-color:rgba(72, 52, 46, 0.7);
-}
-
 .intro{
     font-family: 'Satisfy', cursive;
     text-shadow: -2px 2px 2px rgba(71, 37, 37, 1);
 }
 .start-button {
     background-color:white;
-    color: #46332d;
+    color: black;
     padding: 20px;
+}
+
+.start-button:hover {
+    background-color: #8297e7;
+    cursor: pointer;
+    color:white;
 }
 
 .hidden{
@@ -50,8 +52,13 @@ label {
 button {
     display:block;
     margin: auto;
-    background-color: #b44839;
-    color: white;
+    background-color: white;
+    color: black;
+}
+
+button:hover {
+    background-color:#8297e7;
+    color:white;
 }
 
 ul {
@@ -59,7 +66,7 @@ ul {
 }
 
 .youtube-results{
-    background-color: rgba(184, 70, 0, 0.87);
+    background-color: rgba(86, 67, 127, 0.86);
     padding: 20px 20px;
     border-radius: 4px;
 }
@@ -85,7 +92,7 @@ ul {
 .tastedive-list {
     padding: 30px;
     border-radius:4px;
-    background-color: rgba(68, 123, 141, 0.81);
+    background-color: rgba(135, 33, 50, 0.74);
 }
 
 @media screen and (min-width: 320px) {
@@ -146,7 +153,7 @@ ul {
     }
 
     .youtube-header{
-        text-shadow: -1px 2px 2px rgba(184, 70, 0, 0.87);
+        text-shadow: -1px 2px 2px rgba(86, 67, 127, 0.86);
     }
 
     .youtube-results{
@@ -187,7 +194,7 @@ ul {
     }
 
     .tastedive-header {
-        text-shadow: -3px 2px 3px rgba(68, 123, 141, 0.81);
+        text-shadow: -3px 2px 3px rgba(135, 33, 50, 0.74);
     }
     
     .tastedive-results {
@@ -259,8 +266,8 @@ ul {
     }
 
     .youtube-header{
-        font-size: 30px;
-        text-shadow: -2px 2px 2px rgba(184, 70, 0, 0.87);
+        font-size: 40px;
+        text-shadow: -2px 2px 2px rgba(86, 67, 127, 0.86);
     }
 
     .youtube-results{
@@ -281,7 +288,7 @@ ul {
     }
 
     .news-header {
-        font-size: 30px;
+        font-size: 40px;
         text-shadow: -3px 2px 3px rgba(73, 44, 45, 0.89);
     }
     
@@ -306,8 +313,8 @@ ul {
     }
 
     .tastedive-header {
-        font-size: 30px;
-        text-shadow: -3px 2px 3px rgba(68, 123, 141, 0.81);
+        font-size: 40px;
+        text-shadow: -3px 2px 3px rgba(135, 33, 50, 0.74);
     }
     
     
@@ -397,7 +404,7 @@ ul {
 
     .youtube-header{
         font-size: 50px;
-        text-shadow: -2px 2px 2px rgba(184, 70, 0, 0.87);
+        text-shadow: -2px 2px 2px rgba(86, 67, 127, 0.86);
     }
     
     .youtube-results{
@@ -441,7 +448,7 @@ ul {
 
     .tastedive-header {
         font-size: 50px;
-        text-shadow: -3px 2px 3px rgba(68, 123, 141, 0.81);
+        text-shadow: -3px 2px 3px rgba(135, 33, 50, 0.74);
     }
     
     .tastedive-results {
