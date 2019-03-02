@@ -472,6 +472,7 @@ ul {
     
     .tastedive-results {
         display:block;
+        height:400px;
         margin-left:80px;
         margin-right:80px;
         overflow-y: scroll;
@@ -485,7 +486,7 @@ ul {
     }
 
     tastedive-list iframe {
-        width:325px;
+        widows: 275px;
         height:auto;
     }
 

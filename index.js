@@ -120,7 +120,7 @@ function renderNewsResults(responseJson){
             <img src="${news.urlToImage}" class="news-image" alt="news image">
         `)
     })
-
+    
     $('.results').removeClass('hidden');
 }
 
