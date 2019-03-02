@@ -67,12 +67,11 @@ $(document).ready(function(){
     responseJson.items.forEach(video => {
         $('.youtube-results').append(`
         <h3 class="youtube-title">${video.snippet.title}</a></h3>
-                <div class="iFrame">
-                    <iframe class="iFrame-box" src="https://www.youtube.com/embed/${video.id.videoId}" frameborder="0" allowfullscreen></iframe><br>
-           </div>    
+            <div class="iFrame">
+                <iframe class="iFrame-box" src="https://www.youtube.com/embed/${video.id.videoId}" frameborder="0" allowfullscreen></iframe><br>
+            </div>    
         `)
 })
-
     $('.results').removeClass('hidden');
 }
 
@@ -120,7 +119,6 @@ function renderNewsResults(responseJson){
             <img src="${news.urlToImage}" class="news-image" alt="news image">
         `)
     })
-    
     $('.results').removeClass('hidden');
 }
 
@@ -140,9 +138,6 @@ function getTasteDiveResults(query,callback) {
     $.getJSON(url,callback, function(json){
         renderTasteDiveResults(json);
     }) 
-    .error(function() { 
-        alert("Something went wrong, try again!"); 
-    })
 }
 
 //display tastedive results
@@ -154,32 +149,31 @@ function renderTasteDiveResults(json) {
         $('.tastedive-results').append(`
         <div class="tastedive-list">
             <h3><a href="${rec.wUrl}" target="_blank">${rec.Name}</a></h3>
-            <div class="iFrame">
-                <iframe class="iFrame-box" src="${rec.yUrl}" frameborder="0" allowfullscreen></iframe><br>
-           </div>   
-           <p class="wiki-results">${rec.wTeaser}</p> 
+                <div class="iFrame">
+                    <iframe class="iFrame-box" src="${rec.yUrl}" frameborder="0" allowfullscreen></iframe><br>
+                </div>   
+            <p class="wiki-results">${rec.wTeaser}</p> 
         </div>
         `)
     })
-
     $('.results').removeClass('hidden');
 }
 
-//Search again button-Scrolls to top of page
+//Search again button-scrolls to top of page
 function searchAgainButton() {
     $('.search-again').click(function() {
     $("html, body").animate({ scrollTop: 0 }, "slow");
     return false;
-});
+    });
 }
 
-//search button aligns you with results with each search
+//search button aligns you with section with each new search
 function searchButtonOffset(){
 $('#search-button').click(function() {
 $('html, body').animate({
     scrollTop: ($('.results-page').offset().top)
 },500);
-});
+    });
 }
 
 

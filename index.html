@@ -18,10 +18,11 @@
             </div>
 
             <section class="main-page">  
-                    <p class="intro">Have a favorite musician? Search here for:</p>
-                        <p>Video Interviews</p>
-                        <p>News Articles</p>
-                        <p>Recommendations</p>
+                    <ul class="intro">Have a favorite musician? Search here for:</p>
+                        <li>Video Interviews</li>
+                        <li>News Articles</li>
+                        <li>Recommendations</li>
+                    </ul>    
                         <input type="button" value="Get Started" class="start-button">
             </section>  
             <section class="search-page hidden">
@@ -36,23 +37,18 @@
             <section class="results-page">
                 <div class="results hidden">
                     <div id="left">   
-                    <h2 class="youtube-header">Video Interviews <i class="fab fa-youtube-square"></i></h2>
-                    <div class="youtube-results"></div>
-                </div>
-
-                <div id="right">
-                    <h2 class="news-header">Recent News <i class="far fa-newspaper"></i></h2>
-                    <div class="news-results"></div>
-                </div>    
-
-                    <h2 class="tastedive-header">You may also like:</h2>
-                    <div class="tastedive-results">
+                        <h2 class="youtube-header">Video Interviews <i class="fab fa-youtube-square"></i></h2>
+                            <div class="youtube-results"></div>
                     </div>
-                    <button class="search-again">New Search?</button>
+                    <div id="right">
+                        <h2 class="news-header">Recent News <i class="far fa-newspaper"></i></h2>
+                            <div class="news-results"></div>
+                    </div>           
+                        <h2 class="tastedive-header">You may also like:</h2>
+                            <div class="tastedive-results"></div>
+                        <button class="search-again">New Search?</button>
                 </div>
-                
             </section>
-
         </main>
         <script src="index.js"></script>
     </body>

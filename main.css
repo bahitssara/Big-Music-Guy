@@ -23,6 +23,7 @@ html {
     font-family: 'Satisfy', cursive;
     text-shadow: -2px 2px 2px rgba(71, 37, 37, 1);
 }
+
 .start-button {
     background-color:white;
     color: black;
@@ -67,6 +68,7 @@ button:hover {
 
 ul {
     list-style-type: none;
+    padding-left: 0;
 }
 
 .youtube-results{
@@ -79,8 +81,6 @@ ul {
     background-color:rgba(73, 44, 45, 0.89);
     padding: 20px 20px;
     border-radius:4px;
-    margin-left: 3em;
-    margin-right: 3em;
 }
 
 .news-results a {
@@ -91,21 +91,12 @@ ul {
     text-decoration: underline;
 }
 
-.news-image {
-    width: 350px;
-    height: auto;
-}
-
 .tastedive-results {
     display:flex;
     justify-content: center;
     flex-wrap: wrap;
-}
-
-.tastedive-list {
-    padding: 30px;
-    border-radius:4px;
     background-color: rgba(135, 33, 50, 0.74);
+    border-radius:4px;
 }
 
 .wiki-results {
@@ -119,7 +110,7 @@ ul {
         margin-right:1em;
         border-radius: 5px;
         padding:20px;
-        margin-top: 50px;
+        margin-top: 35px;
     }
 
     .banner {
@@ -130,9 +121,8 @@ ul {
         font-size: 55px;
     }
     
-    .main-page p {
+    .main-page li {
         font-size: 20px;
-        display: block;
     }
 
     .main-page .intro {
@@ -193,7 +183,6 @@ ul {
     
     .news-header {
         text-shadow: -3px 2px 3px rgba(73, 44, 45, 0.89);
-
     }
 
     .news-results {
@@ -216,7 +205,6 @@ ul {
     }
     
     .tastedive-results {
-        display:block;
         margin-left:3px;
         margin-right:3px;
         height:300px;
@@ -250,7 +238,7 @@ ul {
         font-size: 45px;
     }
 
-    .main-page p {
+    .main-page li {
         font-size: 30px;
     }
         
@@ -486,7 +474,7 @@ ul {
     }
 
     tastedive-list iframe {
-        widows: 275px;
+        width: 275px;
         height:auto;
     }
 
